@@ -1,6 +1,12 @@
-# Motorola Edge codename racer Custom Roms
+# Motorola Edge 5G, codename racer, Custom Roms
 
-Custom roms and how to install them on a Motorola Edge 5G #XT2063-2 cell phone. 
+![Motorola Edge 5G XT2063-2](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/blob/main/images/Motorola%20Edge%205G%20Collage%20-%201st%20Draft.png "Motorola Edge 5G XT2063-2")
+
+***
+
+<h1> Custom roms and how to install them on a Motorola Edge 5G #XT2063-2 cell phone. </h1>
+
+
 
 - Phone Specs:
    - SOC 
@@ -44,8 +50,9 @@ Initially appeared on
 ## Prerequisites
 
 Requirements for the software and other tools to build, test and push 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
+- [x] Must have ADB and Fastboot installed on PC
+- [x] Developer mode enabled on device
+- [x] Unlocked Bootloader
 
 ### Getting Started
 
@@ -53,7 +60,7 @@ These instructions will give you a copy of the project up and running on
 your local machine for development and testing purposes. See deployment
 for notes on deploying the project on a live system.
 
-### Installing
+#### Installing
 
 A step by step series of examples that tell you how to get a development
 environment running
