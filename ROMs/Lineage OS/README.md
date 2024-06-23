@@ -1,6 +1,7 @@
 # Motorola Edge 5G (racer) Custom Rom LineageOS Installation Instructions
 
-![IMAGE INFO WHEN HOVERED](https://IMAGELOCATION.COM/HERE "IMAGE INFO WHEN HOVERED")
+![LineageOS Logo 5](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/1b03e692-e83c-43d4-9881-9723f8972ed3)
+
 
 ***
 
@@ -38,6 +39,7 @@ Requirements for the software and other tools to build, test and push
 1. Install Lineage Recovery via Fastboot
 
     1.  Connect device to PC
+    
     2.  Run command
 
     ``` adb -d reboot bootloader ```
@@ -58,11 +60,11 @@ Requirements for the software and other tools to build, test and push
 
 #### Installing
 
-2.  Ensure all firmware pafrtitions are consistent.
+2.  Ensure all firmware partitions are consistent.
 
-    In some cases, the inactive slot can be unpopulated or contain much older firmware than the active slot, leading to various issues including a potential hard-brick. We can ensure none of that will happen by copying the contents of the active slot to the inactive slot.
+    - In some cases, the inactive slot can be unpopulated or contain much older firmware than the active slot, leading to         various issues including a potential hard-brick. We can ensure none of that will happen by copying the contents of          the active slot to the inactive slot.
 
-    To do this, sideload the copy-partitions-20220613-signed.zip package by doing the following:
+    - To do this, sideload the copy-partitions-20220613-signed.zip package by doing the following:
 
         -  On the device, select “Apply Update”, then “Apply from ADB” to begin sideload.
 
@@ -70,47 +72,42 @@ Requirements for the software and other tools to build, test and push
         
         ``` adb -d sideload copy-partitions-20220613-signed.zip  ```
 
-    Now reboot to recovery by tapping “Advanced”, then “Reboot to recovery”.
+        - Now reboot to recovery by tapping “Advanced”, then “Reboot to recovery”.
 
 3.  Install Lineage OS from Recovery
 
-    1.  Download the LineageOS zip file that you would like to install or build the package yourself.
+   - Download the LineageOS zip file that you would like to install or build the package yourself.
 
-    2.  If you are not in recovery, reboot into recovery:
+        - If you are not in recovery, reboot into recovery:
 
-        -With the device powered off, hold Volume Down + Power, then select “Recovery mode” using Volume keys.
+        - With the device powered off, hold Volume Down + Power, then select “Recovery mode” using Volume keys.
 
-    3.  Now tap Factory Reset, then Format data / factory reset and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage, as well as format your cache partition (if you have one).
+        - Now tap Factory Reset, then Format data / factory reset and continue with the formatting process. This will                 remove encryption and delete all files stored in the internal storage, as well as format your cache partition (if           you have one).
 
-    4.  Return to the main menu.
+        - Return to the main menu.
 
-    5.  Sideload the LineageOS .zip package but do not reboot before you read/followed the rest of the instructions!
+        - Sideload the LineageOS .zip package but do not reboot before you read/followed the rest of the instructions!
 
-        -On the device, select “Apply Update”, then “Apply from ADB” to begin sideload.
+            On the device, select “Apply Update”, then “Apply from ADB” to begin sideload.
         
-        -On the host machine, sideload the package using: adb -d sideload filename.zip.
-
-4.  Installing Add-Ons
-
-    1.  Click Apply Update, then Apply from ADB, then adb -d sideload filename.zip for all desired packages in sequence.
-
-    2.  When presented with a screen that says Signature verification failed, click Continue. It is expected as add-ons aren’t signed with LineageOS’s official key!
-
-5.  All Set
-
-    1.  Once you have installed everything successfully, you can now reboot your device into the OS for the first time!
-
-    2.  Click the back arrow in the top left of the screen, then “Reboot system now”.
-
+            On the host machine, sideload the package using:
     
 
-Say what the step will be
+            ``` adb -d sideload filename.zip ```
 
-    Give the example
+5.  Installing Add-Ons
 
-And repeat
+    1.  Click Apply Update, then Apply from ADB, then 
 
-    until finished
+        ``` adb -d sideload filename.zip ```
 
-End with an example of getting some data out of the system or using it
-for a little demo
+        - Repeat for all desired packages in sequence.
+
+
+    2.  When presented with a screen that says Signature verification failed, click Continue. It is expected as add-ons             aren’t signed with LineageOS’s official key!
+
+6.  All Set
+
+    - Once you have installed everything successfully, you can now reboot your device into the OS for the first time!
+
+        - Click the back arrow in the top left of the screen, then “Reboot system now”.
