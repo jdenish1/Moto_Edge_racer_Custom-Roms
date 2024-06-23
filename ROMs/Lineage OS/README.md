@@ -54,7 +54,10 @@ Requirements for the software and other tools to build, test and push
 
     5.  Reboot into recovery to verify installation.
 
-        Use volume down button and select recovery, then hit power button to confirm and       reboot into recovery.
+        Use volume down button and select recovery, then hit power button to confirm and reboot into recovery.
+
+        
+![Recovery Mode](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/0b341026-bf25-45a8-b1f4-645ced0e736f)
 
 ***
 
