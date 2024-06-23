@@ -22,15 +22,14 @@ Requirements for the software and other tools to build, test and push
 
 ### Files Required
 
-- [x] [LineageOS 20]: (https://mirrorbits.lineageos.org/full/racer/20240620/lineage-20.0-20240620-nightly-racer-signed.zip)
-- [x] [boot.img]: (https://mirrorbits.lineageos.org/full/racer/20240620/boot.img)
-- [x] [dtbo.img]: (https://mirrorbits.lineageos.org/full/racer/20240620/dtbo.img)
-- [x] [recovery.img]: (https://mirrorbits.lineageos.org/full/racer/20240620/recovery.img)
-- [x] [super_empty.img]: (https://mirrorbits.lineageos.org/full/racer/20240620/super_empty.img)
-- [x] [vbmeta.img]: (https://mirrorbits.lineageos.org/full/racer/20240620/vbmeta.img)
-- [x] [copy-partitions-20220613-signed.zip]: (https://mirrorbits.lineageos.org/tools/copy-partitions-20220613-signed.zip)
-- [x] 
-- [x]
+- [x] [LineageOS 20](https://mirrorbits.lineageos.org/full/racer/20240620/lineage-20.0-20240620-nightly-racer-signed.zip)
+- [x] [boot.img](https://mirrorbits.lineageos.org/full/racer/20240620/boot.img)
+- [x] [dtbo.img](https://mirrorbits.lineageos.org/full/racer/20240620/dtbo.img)
+- [x] [recovery.img](https://mirrorbits.lineageos.org/full/racer/20240620/recovery.img)
+- [x] [super_empty.img](https://mirrorbits.lineageos.org/full/racer/20240620/super_empty.img)
+- [x] [vbmeta.img](https://mirrorbits.lineageos.org/full/racer/20240620/vbmeta.img)
+- [x] [copy-partitions-20220613-signed.zip](https://mirrorbits.lineageos.org/tools/copy-partitions-20220613-signed.zip)
+- [x] [MindTheGApps](https://github.com/MindTheGapps/13.0.0-arm64/releases/download/MindTheGapps-13.0.0-arm64-20231025_200931/MindTheGapps-13.0.0-arm64-20231025_200931.zip)
 
 ***
 
@@ -89,14 +88,14 @@ Requirements for the software and other tools to build, test and push
 
         - Return to the main menu.
 
-        - Sideload the LineageOS .zip package but do not reboot before you read/followed the rest of the instructions!
+        - Sideload the lineage-20.0-20240613-nightly-racer-signed.zip package but do not reboot before you read/followed              the rest of the instructions!
 
             On the device, select “Apply Update”, then “Apply from ADB” to begin sideload.
         
             On the host machine, sideload the package using:
     
 
-            ``` adb -d sideload filename.zip ```
+            ``` adb -d sideload lineage-20.0-20240613-nightly-racer-signed.zip ```
 
 5.  Installing Add-Ons
 
@@ -105,11 +104,13 @@ Requirements for the software and other tools to build, test and push
         ``` adb -d sideload filename.zip ```
 
         - Repeat for all desired packages in sequence.
+      
+        ``` adb -d sideload MindTheGapps-13.0.0-arm64-20231025_200931.zip ```
 
 
-    2.  When presented with a screen that says Signature verification failed, click Continue. It is expected as add-ons             aren’t signed with LineageOS’s official key!
+    3.  When presented with a screen that says Signature verification failed, click Continue. It is expected as add-ons             aren’t signed with LineageOS’s official key!
 
-6.  All Set
+7.  All Set
 
     - Once you have installed everything successfully, you can now reboot your device into the OS for the first time!
 
