@@ -2,7 +2,7 @@
 
 ***
 
-<p align="center"><img src="https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/976d626e-f85e-4e73-b700-21616983931d" /></p>
+<p align="center"><img src="https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/d04150ed-f9dd-41f0-93ad-a5b0b32cc89a" /></p>
 
 ***
 
@@ -105,7 +105,7 @@ Next, open powershell window from the same platform-tools folder and we are read
 
 1.  Connect phone to pc. A dialog box should pop up asking you to enable USB Debugging with this device, asking you to trust the fingerprint. Check the box yes and hit OK.
 
-[INSERT IMAGE HERE]
+![Allow USB Debugging and Trust PC](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/19cf9464-cb3e-49ca-a906-f5d6119c63e7)
 
 Then run command:
 
@@ -155,13 +155,19 @@ Then click on Wipe > Advanced Wipe. Then select System, data, cache, Dalvik cach
 
 Inside TWRP click Install > HavocOS v6.0 + Google Apps.zip File > Swipe to confim flash.
 
+![install-havoc-os](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/f49510ae-3e64-41bb-b65e-cd492c647207)
+
 Wait until completed, then at the bottom you will se a button > Wipe Cache/Dalvik. Select it, then hit button > Reboot > To Recovery.
+
+![wipe-cache-havoc](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/f7f052c1-9637-4586-bfc3-df663702b7e2)
 
 *Note-1: Slots, ROMS install to opposite (inactive) slot. If you FLASHED ROM from "Slot A", then ROM is installed to "Slot B", If you Flashed ROM from "Slot B", then ROM is installed to "Slot A"*
 
 7.  Install GApps.
 
 Inside TWRP recovery, tap: Install > then select GApps.zip version you want to install > swipe to install. 
+
+![havoc3 - open-gapps-install-1](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/4905e3f3-6be3-4c31-94f8-2800f7577e4c)
 
 When done, Select > Wipe Cache/Dalvik.
 
@@ -175,6 +181,8 @@ Copy Magisk App (.apk file) to the phone.
 
 Change the extension of the file from “.apk” to “.zip”. This will make it flashable. 
 
+![havoc4 - Rename-magisk](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/19da1560-4389-41d2-a129-031811617885)
+
 Reboot back into recovery with command
 
 ``` adb reboot recovery ```
@@ -183,27 +191,29 @@ Inside TWRP Recovery tap: Install > Select Magisk.zip > Swipe to confirm install
 
 Wait for the process to complete, then Wipe Cache/Dalvik > Reboot to system.
 
+![havoc5 - Flash-Magisk-Zip](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/3494d595-d0c8-440a-8fd0-1f47606858be)
+
 Now go to app drawer and click on the Magisk app icon. If it says to download and install the full Magisk package, then go ahead and do that.
 
 Once it’s done, you can click on the “Check SafetyNet” option in the Magisk app.
 
 You should get a success message.
 
+![havoc6 - check-safetynet-magisk](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/790f3273-f01e-48b6-bac2-6b601e549559)
+
 9.  *Troubleshoot:* If SafetyNet check fails, then download and flash [kdrag0n’s SafetyNet-fix](https://github.com/kdrag0n/safetynet-fix)
 
 
 10. Use and enjoy your new ROM and customization features.
 
-
-
-
-
-
+***
 
 ##### Updating the "Dirty" Way From an Older Version of HavocOS
 
-*Note-3: Updating "Dirty Flash"
 01. Flash ROM + TWRP installer.
+
 02. Reboot -> Recovery
-02. Install Gapps + Magisk
-03. Reboot -> System
+
+03. Install Gapps + Magisk
+
+04. Reboot -> System
