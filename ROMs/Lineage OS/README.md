@@ -9,6 +9,38 @@ How to install LineageOS 20, based on Android 13, on the Motorola Edge 5G #XT206
 
 ***
 
+## Features of Lineage OS
+
+Unlike other custom ROMs, Lineage OS doesn’t provide you with loads of customizations. They tend to keep things simple and stable as possible.
+
+Here’s the list of some additional features and customizations Lineage OS provides:
+
+- No Bloatware
+
+- Native theme support
+
+- LiveDisplay
+
+- Lock screen customization
+
+- Weather providers
+
+- System Profiles
+
+- ADB root
+
+- Expanded Desktop
+
+- LineageOS’s Privacy Guard
+
+- CPU overclocking
+
+- Option for root access
+
+- And some other enhancements.
+
+***
+
 ## Prerequisites
 
 Requirements for the software and other tools to build, test and push 
@@ -17,6 +49,8 @@ Requirements for the software and other tools to build, test and push
 - [x] USB Debugging Enabled on Device
 - [x] Unlocked Bootloader
 - [x] Boot Your Device with Stock FW Once and Check Every Functionality
+- [x] SD Card large enough to hold the downloaded files
+- [x] Phone charged at least 70%
 
 ***
 
@@ -37,9 +71,11 @@ Requirements for the software and other tools to build, test and push
 
 1. Install Lineage Recovery via Fastboot
 
-    1.  Connect device to PC
+    1.  Connect phone to pc. A dialog box should pop up asking you to enable USB Debugging with this device, asking you to trust the fingerprint. Check the box yes and hit OK.
+
+    [INSERT IMAGE HERE]
     
-    2.  Run command
+    2.  Run command:
 
     ``` adb -d reboot bootloader ```
 

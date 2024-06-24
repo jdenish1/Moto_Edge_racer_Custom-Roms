@@ -6,22 +6,77 @@
 
 ***
 
-
 How to install Havoc OS on the Motorola Edge 5G #XT2063-2.
 
 Havoc-OS 4.x is based on AOSP, inspired by Google Pixel. It has a refined Material Design 2 UI crafted by @SKULSHADY. There are many useful features that will blow your mind. All you can dream of and all you'll ever need.
 
 Just flash and enjoy...
 
+***
+
+## Features of Havoc OS
+
+- Face Unlock
+
+- Enhanced QS Battery Estimation
+
+- Font Customisation
+
+- Dark Theme Support for AOSP apps
+
+- Notification LED Settings
+
+- Signature Spoofing
+
+- Micro-G support
+
+- Lockscreen charging animation
+
+- Status Bar Customizations
+
+- Ambient Display
+
+- Screen Customizations
+
+- Button Customizations
+
+- Gestures
+
+- Lockscreen customizations
+
+- Notifications settings
+
+- Animation
+
+- Gaming Mode
+
+- Battery saving tweaks
+
+- Vibration & Haptics Customization
+
+- LiveDisplay
+
+- Notch Hide Settings
+
+- Screen Refresh Rate (For Supported Devices)
+
+- Always On Display
+
+- Smart Charging
+
+- Theming Customizations
+
+- And many more.
 
 ***
 
 ## Prerequisites
-
-Requirements for the software and other tools to build, test and push 
+ 
 - [x] Must have ADB and Fastboot installed on PC
 - [x] Developer mode enabled on device
 - [x] Unlocked Bootloader
+- [x] SD Card large enough to hold all the downloaded files
+- [x] Phone battery charged at least 70%
 
 ***
 
@@ -40,41 +95,109 @@ Requirements for the software and other tools to build, test and push
 
 Make sure that your bootloader is unlocked and ready to install custom ROMs, as well as having USB Debugging enabled so your PC can communicate with your phone. 
 
-Download all files from links above and have them somewhere accessible on your PC.
+Download all files from links above, transfer all the .zip files to your SD card, and also transfer ALL files to the platform-tools folder on your PC.
+
+Next, open powershell window from the same platform-tools folder and we are ready to begin.
 
 ***
 
 #### Installing
 
-Connect phone to PC 
+1.  Connect phone to pc. A dialog box should pop up asking you to enable USB Debugging with this device, asking you to trust the fingerprint. Check the box yes and hit OK.
 
-    Give the example
+[INSERT IMAGE HERE]
 
-And repeat
+Then run command:
 
-    until finished
+``` adb reboot bootloader ```
 
-End with an example of getting some data out of the system or using it
-for a little demo
+This will get you into fastboot mode. Then run the command:
 
+``` fastboot devices ```
 
-Instructions
-01. Download the ROM, Firmware and GApps from the links above.
-02. Use terminal to boot latest twrp.img "fastboot boot twrp.img"
-03. Create backup. i.e. EFS / Persist and put somewhere safe.
+Make sure you see your device and serial number in the terminal, along with "available". If so, proceed to next step.
+
+2.  Use terminal to boot latest twrp.img by using command:
+
+``` fastboot boot twrp.img ```
+
+3.  *Optional* Create a backup of your device in case something goes wrong. i.e. EFS / Persist and save it somewhere safe.
+
+4.  Next, flash copy-partitions-peyton.zip into TWRP "SLOT A".
+
+Rename file to copy-partitions.zip inside the platform-tools folder.
+
+In TWRP, go to Advanced > ADB Sideload > Swipe to perform a sideload.
+
+Then run command:
+
+``` adb sideload copy-partitions.zip ```
 
 ## YOU ONLY NEED THIS STEP ONCE.. When updating Firmwares ##
-04.At this point Flash "Copy Partitions Zip" In TWRP "SLOT A"
 
-05. Flash the ROM and TWRP installer.
-06. Choose Reboot -> Recovery
-07. Install GApps & Magisk.
-08. Reboot -> Bootloader
-09. fastboot -w
-10. Reboot and Enjoy.
+Once done it is recommended to reboot to recovery. In TWRP, go to Reboot > Recovery.
 
-*Note-1: Slots, ROMS install to opposite (inactive) slot
-If you FLASHED ROM from "Slot A", then ROM is installed to "Slot B", If you Flashed ROM from "Slot B", then ROM is installed to "Slot A"
+5.  Flash the TWRP installer.
+
+Rename TWRP recovery file twrp-3.5.0_10-0-racer.img to recovery.img inside platform-tools folder.
+
+Flash TWRP with command:
+
+``` fastboot flash boot recovery.img ```
+
+Reboot your phone to recovery again with command:
+
+``` fastboot boot recovery.img ```
+
+Then click on Wipe > Advanced Wipe. Then select System, data, cache, Dalvik cache partition and wipe it.
+
+6.  Flash the HavocOS ROM
+
+Inside TWRP click Install > HavocOS v6.0 + Google Apps.zip File > Swipe to confim flash.
+
+Wait until completed, then at the bottom you will se a button > Wipe Cache/Dalvik. Select it, then hit button > Reboot > To Recovery.
+
+*Note-1: Slots, ROMS install to opposite (inactive) slot. If you FLASHED ROM from "Slot A", then ROM is installed to "Slot B", If you Flashed ROM from "Slot B", then ROM is installed to "Slot A"*
+
+7.  Install GApps.
+
+Inside TWRP recovery, tap: Install > then select GApps.zip version you want to install > swipe to install. 
+
+When done, Select > Wipe Cache/Dalvik.
+
+Reboot > Bootloader
+
+It might take a little while on first boot up, sometimes up to 15 minutes, but when done you will be greeted with the Havoc OS home screen.
+
+8.  *Optional* Install Magisk
+
+Copy Magisk App (.apk file) to the phone.
+
+Change the extension of the file from “.apk” to “.zip”. This will make it flashable. 
+
+Reboot back into recovery with command
+
+``` adb reboot recovery ```
+
+Inside TWRP Recovery tap: Install > Select Magisk.zip > Swipe to confirm install.
+
+Wait for the process to complete, then Wipe Cache/Dalvik > Reboot to system.
+
+Now go to app drawer and click on the Magisk app icon. If it says to download and install the full Magisk package, then go ahead and do that.
+
+Once it’s done, you can click on the “Check SafetyNet” option in the Magisk app.
+
+You should get a success message.
+
+9.  *Troubleshoot:* If SafetyNet check fails, then download and flash [kdrag0n’s SafetyNet-fix](https://github.com/kdrag0n/safetynet-fix)
+
+
+10. Use and enjoy your new ROM and customization features.
+
+
+
+
+
 
 
 ##### Updating the "Dirty" Way From an Older Version of HavocOS
