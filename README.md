@@ -1,6 +1,6 @@
 # Motorola Edge 5G, codename racer, Custom Roms
 
-![Motorola Edge 5G XT2063-2](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/blob/main/images/Motorola%20Edge%205G%20Collage%20-%201st%20Draft.png "Motorola Edge 5G XT2063-2")
+![Motorola Edge 5G Collage](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/17c6896f-6d60-4391-9367-d3226bf2a03d)
 
 ***
 
@@ -109,7 +109,7 @@ Requirements for the software and other tools to build, test and push
 
     5.  Go in there and enable the USB debugging option.
 
-    ![8-USB Debugging Enabled - RESIZED](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/99e64f71-3e03-478b-8f21-e33130b7f115)
+    ![8-USB Debugging Enabled - RESIZED 450w](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/da099d5b-3b4f-4c12-ab0b-45d5793b4cd8)
 
     6.  Also scroll down to 
 
@@ -145,7 +145,7 @@ Requirements for the software and other tools to build, test and push
 
     7.  On your phone's screen, you should see a prompt to allow or deny USB Debugging access. Tap Allow.
 
-    ![Allow USB Debugging and Trust PC - RESIZED](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/d8d2ccc6-5381-41f3-9849-db2fa35b0bf6)
+    ![Allow USB Debugging and Trust PC - RESIZED 450w](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/a332ab02-f9bf-44ff-9039-44b6fa485726)
 
     8.  Finally, re-enter the command:
     
