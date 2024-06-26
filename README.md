@@ -1,6 +1,6 @@
 # Motorola Edge 5G, codename racer, Custom Roms
 
-![Motorola Edge 5G XT2063-2](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/blob/main/images/Motorola%20Edge%205G%20Collage%20-%201st%20Draft.png "Motorola Edge 5G XT2063-2")
+![Motorola Edge 5G Collage](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/17c6896f-6d60-4391-9367-d3226bf2a03d)
 
 ***
 
@@ -87,38 +87,43 @@ Requirements for the software and other tools to build, test and push
 
     2.  Tap the ``` About Phone ``` option generally near the bottom of the list.
 
-    [IMAGE 1]
+    ![1-About Phone - RESIZED 450wide](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/9529ec78-57c0-4bd0-b515-78f9f941d264)
 
     3.  Then tap the Build number option seven times to enable Developer Mode. You will see a toast message when it is done.
 
-    [IMAGE 2]
-    [IMAGE 3]
-    [IMAGE 4]
-    [IMAGE 5]
+    ![2-Build Number - RESIZED 450wide](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/b10e3106-3fcb-4147-9e83-69e704481625)
+
+    ![3-3 Steps Away from being a Developer - RESIZED 450wide](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/191535cf-435e-43f2-a6b5-ea44c58eb0c7)
+
+    ![4-1 Step Away from being a Developer - RESIZED 450wide](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/cf24d7a5-76ba-4753-a8a4-302723f60051)
+
+    ![5-You are Now a Developer - RESIZED 450wide](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/f909aee0-0a75-46ef-ba1a-f74fb5e05a56)
 
     4.  Now go back to ``` Settings > System > Developer Options ``` There will be a menu you can access.
 
-    [IMAGE 6]
-    [IMAGE 6.5]
-    [IMAGE 7]
+    ![6-Settings - Then System - RESIZED 450wide](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/df9258ce-a186-402b-b5a9-ce97b0876efe)
+
+    ![6 5-Then Advanced - RESIZED 450wide](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/02592ff7-da8a-42a7-aaab-f08583ef0725)
+
+    ![7-Developer Mode - RESIZED 450wide](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/59cfaa7f-d02c-47ae-b5dd-527c8dfa10fa)
 
     5.  Go in there and enable the USB debugging option.
 
-    [IMAGE 8]
+    ![8-USB Debugging Enabled - RESIZED 450w](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/da099d5b-3b4f-4c12-ab0b-45d5793b4cd8)
 
     6.  Also scroll down to 
 
         ``` Default USB configuration ```
 
-    [IMAGE 9]
+    ![9-Default USB Config - RESIZED 450W](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/9d8a02a0-b8c8-443d-8682-9197e436f33a)
 
-        Select
+    7.	Select
 
         ``` File Transfer ```
 
-    [IMAGE 10]
+    ![10-File Transfer - RESIZED 450w](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/3fa219dc-ba3c-4d06-aefb-4dec828253ac)
 
-    7.  For now, you're done with the process on the phone. Next up, you will need to scroll below and follow the rest of the instructions for setting up your PC.
+    8.  For now, you're done with the process on the phone. Next up, you will need to scroll below and follow the rest of the instructions for setting up your PC.
 
 2.  Setting Up ADB and Fastboot on Your PC
 
@@ -136,13 +141,17 @@ Requirements for the software and other tools to build, test and push
 
     6.  In the PowerShell/Terminal window, enter the following command to launch the ADB daemon.
 
-      ``` ADB devices ```
+      	``` ADB devices ```
 
     7.  On your phone's screen, you should see a prompt to allow or deny USB Debugging access. Tap Allow.
 
-    [IMAGE ALLOW USB DEBUGGING]
+    ![Allow USB Debugging and Trust PC - RESIZED 450w](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/a332ab02-f9bf-44ff-9039-44b6fa485726)
 
-    8.  Finally, re-enter the command: ```ADB devices ``` from step 6. If everything was successful, you should now see your device's serial number in the command prompt/Terminal window.
+    8.  Finally, re-enter the command:
+    
+    	```ADB devices ```
+
+    9.	If everything was successful, you should now see your device's serial number in the command prompt/Terminal window.
 
 ***
 
@@ -150,34 +159,56 @@ Requirements for the software and other tools to build, test and push
 
 3.  Unlocking Bootloader of Device
 
-    1.  Run command:
+    1.  To get your device into fastboot mode, run command:
 
-    ``` adb reboot bootloader ``
-
-    This will get your device into fastboot mode.
+    	``` adb reboot bootloader ```
 
     2.  Then run command:
 
-    ``` fastboot devices ```
+    	``` fastboot devices ```
 
-    If everything was successful, you should now see your device's serial number in the command prompt/Terminal window.
+    3.	If everything was successful, you should now see your device's serial number in the command prompt/Terminal window.
 
-    3.  Next you will need to get your device key. Do this by running command:
+    4.  Next you will need to get your device key. Do this by running command:
 
-    ``` fastboot oem get_unlock_data ```
+    	``` fastboot oem get_unlock_data ```
 
-    4.  It should return a string of characters such as:
+    5.  It should return a string of characters such as:
+
+	```
+ 	...
+	(bootloader) Unlock data:
+	(bootloader) 3A55251601165756#5A593232375643
+	(bootloader) 514848006D6F746F726F6C0000#9DDA
+	(bootloader) 1419FA000B5CAC3F1A4F980BDA3D734
+	(bootloader) 86836#2275A65800000000000000000
+	(bootloader) 0000000
+	OKAY [  1.764s]
+	finished. total time: 1.764s
+ 	```
+
+    6.  To generate your unlock code, you’ll need to paste together the 5 lines of output into one continuous string without "bootloader or info" or white spaces. Using the example above, the line you’d send us would be:
+
+	```
+	3A55251601165756#5A593232375643514848006D6F746F726F6C0000#9DDA1419FA000B5CAC3F1A4F980BDA3D73486836#2275A658000000000000000000000000
+	```
+
+    7.	 To use your unlock code, go to the [Motorola Website](https://en-us.motorola.com/app/standalone/bootloader/unlock-your-device-b)
+  
+    8.	 Once there, the site will ask you to login to your Google account, or your Motorola account, because they will send you your code to the email associated with that account. Once you login, go to the bottom of the page and look for the "Can my device e unlocked button", and enter your unlock code from step 6, agree to the TOCs, and click the red button.
+
+	![Moto Can My Device be Unlocked Button - RESIZED 450w](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/cea4437f-e9e9-404a-86c1-45d93eaa63ff)
+  
+    9.	 Next, check your email account for the message from Motorola. It should be titled Unlocking Your Device or something like that. Within that email will be the secondary lock code required to inout in the device to finish the unlock process. My code was:
+
+	``` Unlock Code: CQQ4UNWL45FTEDCR5RVJ ```
+
+	![Motorola Email - RESIZED 450w](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/e2f82417-7b26-461c-bbfb-d6b61b006e16)
+
+    10.	
 
 
-
-    5.  To generate your unlock code, you’ll need to paste together the 5 lines of output into
-one continuous string without "bootloader or info" or white spaces. Using the
-example above, the line you’d send us would be:
-
-
-
-    6.  
-
+      
 A step by step series of examples that tell you how to get a development
 environment running
 
