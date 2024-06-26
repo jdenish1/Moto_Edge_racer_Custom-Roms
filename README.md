@@ -175,35 +175,35 @@ Requirements for the software and other tools to build, test and push
 
     5.  It should return a string of characters such as:
 
-	```
- 	...
-	(bootloader) Unlock data:
-	(bootloader) 3A55251601165756#5A593232375643
-	(bootloader) 514848006D6F746F726F6C0000#9DDA
-	(bootloader) 1419FA000B5CAC3F1A4F980BDA3D734
-	(bootloader) 86836#2275A65800000000000000000
-	(bootloader) 0000000
-	OKAY [  1.764s]
-	finished. total time: 1.764s
- 	```
+	    ```
+ 	    ...
+	    (bootloader) Unlock data:
+	    (bootloader) 3A55251601165756#5A593232375643
+	    (bootloader) 514848006D6F746F726F6C0000#9DDA
+	    (bootloader) 1419FA000B5CAC3F1A4F980BDA3D734
+	    (bootloader) 86836#2275A65800000000000000000
+	    (bootloader) 0000000
+	    OKAY [  1.764s]
+	    finished. total time: 1.764s
+ 	    ```
 
     6.  To generate your unlock code, you’ll need to paste together the 5 lines of output into one continuous string without "bootloader or info" or white spaces. Using the example above, the line you’d send us would be:
 
-	```
-	3A55251601165756#5A593232375643514848006D6F746F726F6C0000#9DDA1419FA000B5CAC3F1A4F980BDA3D73486836#2275A658000000000000000000000000
-	```
+	    ```
+	    3A55251601165756#5A593232375643514848006D6F746F726F6C0000#9DDA1419FA000B5CAC3F1A4F980BDA3D73486836#2275A658000000000000000000000000
+	    ```
 
     7.	 To use your unlock code, go to the [Motorola Website](https://en-us.motorola.com/app/standalone/bootloader/unlock-your-device-b)
   
     8.	 Once there, the site will ask you to login to your Google account, or your Motorola account, because they will send you your code to the email associated with that account. Once you login, go to the bottom of the page and look for the "Can my device e unlocked button", and enter your unlock code from step 6, agree to the TOCs, and click the red button.
 
-	![Moto Can My Device be Unlocked Button - RESIZED 450w](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/cea4437f-e9e9-404a-86c1-45d93eaa63ff)
+	  ![Moto Can My Device be Unlocked Button - RESIZED 450w](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/cea4437f-e9e9-404a-86c1-45d93eaa63ff)
   
     9.	 Next, check your email account for the message from Motorola. It should be titled Unlocking Your Device or something like that. Within that email will be the secondary lock code required to inout in the device to finish the unlock process. My code was:
 
-	``` Unlock Code: CQQ4UNWL45FTEDCR5RVJ ```
+	    ``` Unlock Code: CQQ4UNWL45FTEDCR5RVJ ```
 
-	![Motorola Email - RESIZED 450w](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/e2f82417-7b26-461c-bbfb-d6b61b006e16)
+	  ![Motorola Email - RESIZED 450w](https://github.com/jdenish1/Moto_Edge_racer_Custom-Roms/assets/96416029/e2f82417-7b26-461c-bbfb-d6b61b006e16)
 
     10.	
 
